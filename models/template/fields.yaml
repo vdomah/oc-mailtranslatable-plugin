@@ -1,0 +1,29 @@
+fields:
+    mail_template:
+        label: Mail Template
+        span: auto
+        type: relation
+        select: CONCAT_WS(' ', code, subject)
+    subject:
+        label: Subject
+        span: auto
+        oc.commentPosition: ''
+        type: text
+    description:
+        label: Description
+        oc.commentPosition: ''
+        span: auto
+        type: textarea
+        size: small
+    html:
+        label: Html
+        size: large
+        oc.commentPosition: ''
+        span: auto
+        type: richeditor
+    plain:
+        label: Plain
+        size: large
+        oc.commentPosition: ''
+        span: auto
+        type: textarea

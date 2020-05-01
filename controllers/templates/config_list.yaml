@@ -1,0 +1,11 @@
+list: $/vdomah/mailtranslatable/models/template/columns.yaml
+modelClass: Vdomah\MailTranslatable\Models\Template
+title: Templates
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vdomah/mailtranslatable/templates/update/:id'

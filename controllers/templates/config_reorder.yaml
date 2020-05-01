@@ -1,0 +1,4 @@
+title: Templates
+modelClass: Vdomah\MailTranslatable\Models\Template
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,16 @@
+plugin:
+    name: 'vdomah.mailtranslatable::lang.plugin.name'
+    description: 'vdomah.mailtranslatable::lang.plugin.description'
+    author: Vdomah
+    icon: oc-icon-envelope-square
+    homepage: ''
+navigation:
+    mailtranslatable:
+        label: Mail
+        url: vdomah/mailtranslatable/templates
+        icon: icon-envelope-square
+        sideMenu:
+            mailtranslatable:
+                label: 'Mail templates'
+                url: vdomah/mailtranslatable/templates
+                icon: icon-envelope-square

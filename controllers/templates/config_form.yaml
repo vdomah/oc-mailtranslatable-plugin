@@ -1,0 +1,10 @@
+name: Templates
+form: $/vdomah/mailtranslatable/models/template/fields.yaml
+modelClass: Vdomah\MailTranslatable\Models\Template
+defaultRedirect: vdomah/mailtranslatable/templates
+create:
+    redirect: 'vdomah/mailtranslatable/templates/update/:id'
+    redirectClose: vdomah/mailtranslatable/templates
+update:
+    redirect: vdomah/mailtranslatable/templates
+    redirectClose: vdomah/mailtranslatable/templates
