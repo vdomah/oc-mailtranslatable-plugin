@@ -1,28 +1,28 @@
 fields:
     mail_template:
-        label: Mail Template
+        label: vdomah.mailtranslatable::lang.fields.mail_template
         span: auto
         type: relation
         select: CONCAT_WS(' ', code, subject)
     subject:
-        label: Subject
+        label: vdomah.mailtranslatable::lang.fields.subject
         span: auto
         oc.commentPosition: ''
         type: text
     description:
-        label: Description
+        label: vdomah.mailtranslatable::lang.fields.description
         oc.commentPosition: ''
-        span: auto
+        span: full
         type: textarea
         size: small
     html:
-        label: Html
+        label: vdomah.mailtranslatable::lang.fields.html
         size: large
         oc.commentPosition: ''
         span: auto
         type: richeditor
     plain:
-        label: Plain
+        label: vdomah.mailtranslatable::lang.fields.plain
         size: large
         oc.commentPosition: ''
         span: auto

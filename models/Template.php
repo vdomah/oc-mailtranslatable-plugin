@@ -26,6 +26,7 @@ class Template extends Model
      * Validation
      */
     public $rules = [
+        'mail_template_id' => 'required',
     ];
 
     /**
@@ -36,16 +37,4 @@ class Template extends Model
     public $belongsTo = [
         'mail_template' => MailTemplate::class,
     ];
-
-    public function getHtml($data = [])
-    {
-        $out = $this->html;
-
-        foreach ($data as $var=>$value) {
-            $out = str_replace('{{ ' . $var . ' }}', $value, $out);
-            $out = str_replace('{{' . $var . '}}', $value, $out);
-        }
-
-        return $out;
-    }
 }

@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use System\Classes\SettingsManager;
 
 class Templates extends Controller
 {
@@ -14,6 +15,8 @@ class Templates extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Vdomah.MailTranslatable', 'mailtranslatable', 'mailtranslatable');
+        BackendMenu::setContext('October.System', 'system', 'settings');
+        SettingsManager::setContext('Vdomah.MailTranslatable', 'templates');
+        //BackendMenu::setContext('Vdomah.MailTranslatable', 'mailtranslatable', 'mailtranslatable');
     }
 }

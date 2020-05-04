@@ -1,11 +1,12 @@
 columns:
-    name:
-        label: name
-        type: text
+    mail_template:
+        label: vdomah.mailtranslatable::lang.fields.mail_template
         searchable: true
         sortable: true
-    code:
-        label: code
+        relation: mail_template
+        select: CONCAT_WS(' ', code, subject)
+    subject:
+        label: vdomah.mailtranslatable::lang.fields.subject
         type: text
         searchable: true
         sortable: true
