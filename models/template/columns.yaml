@@ -4,7 +4,7 @@ columns:
         searchable: true
         sortable: true
         relation: mail_template
-        select: CONCAT_WS(' ', code, subject)
+        select: code
     subject:
         label: vdomah.mailtranslatable::lang.fields.subject
         type: text

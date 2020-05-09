@@ -1,3 +1,5 @@
 1.0.0:
     - 'Created table vdomah_mailtranslatable_templates'
     - builder_table_create_vdomah_mailtranslatable_templates.php
+1.0.1:
+    - Replace CONCAT_WS function in template model files

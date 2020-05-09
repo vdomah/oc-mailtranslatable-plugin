@@ -3,7 +3,7 @@ fields:
         label: vdomah.mailtranslatable::lang.fields.mail_template
         span: auto
         type: relation
-        select: CONCAT_WS(' ', code, subject)
+        select: code
     subject:
         label: vdomah.mailtranslatable::lang.fields.subject
         span: auto
