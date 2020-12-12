@@ -21,6 +21,10 @@ class Plugin extends PluginBase
 
                 //check if it exists and has template_db object which stores translations
                 if ($obMailTemplate && $obMailTemplate->template_db) {
+                    if ($obMailTemplate->template_db->subject) {
+                        $obMessage->subject($obMailTemplate->template_db->subject);
+                    }
+
                     if ($obMailTemplate->template_db->html) {
                         $obMessage->setBody($obMailTemplate->template_db->html, 'text/html');
                     }

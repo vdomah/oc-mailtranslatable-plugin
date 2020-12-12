@@ -3,3 +3,5 @@
     - builder_table_create_vdomah_mailtranslatable_templates.php
 1.0.1:
     - Replace CONCAT_WS function in template model files
+1.0.2:
+    - Mail's subject translated.
